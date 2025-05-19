@@ -1,0 +1,25 @@
+[
+    {
+        "card1": "Frontend",
+        "skill1": "HTML5, CSS3, JavaScript (ES6+)",
+        "skill2": "React.js (Vite, Hooks, Props, State Management)",
+        "skill3": "UI/UX Design Principles",
+        "skill4": "Tailwind CSS, Responsive Design",
+        "skill5": "DOM Manipulation, LocalStorage"
+    },
+    {
+        "card2": "Backend & Tools",
+        "skill12": "Node.js (Basics in Progress)",
+        "skill22": "Firebase (Auth, Firestore, Hosting)",
+        "skill32": "Git & GitHub (Version Control, Deployment)",
+        "skill42": "REST APIs Integration",
+        "skill52": "JSON Data Handling"
+    },
+    {
+        "card3": "Other Strengths",
+        "skill13": "Prompt Engineering & AI Integration",
+        "skill23": "Problem Solving & Logical Thinking",
+        "skill33": "Business Acumen (from hands-on family business experience)",
+        "skill44": "Effective Communication & Teachinge"
+    }
+]

@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+
+/*custom variables*/
+:root{
+    --primary: #3b82f6;
+    --success: #10b981;
+    --mindful: #8b5cf6;
+    --danger: #ef4444;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --bg-light: #f3f4f6;
+    --bg-dark: #1f2937;
+    --input-bg: #fff;
+    --input-border: #d1d5db;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --font-family:'Inter',system-ui ,-apple-system ,sans-serif;
+}
+
+@media (prefer-color-scheme: dark){
+    :root{
+        --text-primary: #f3f4f6;
+        --text-secondary:#9ca3af;
+        --bg-light: #1f2937;
+        --bg-dark: #111827;
+        --input-bg: #374151;
+        --input-border: #4b5563;
+    }
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(-40%);
+  }
+}
+
+@keyframes rotate-y {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes slide-right{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+.animate-slide-right{
+  animation: slide-right 20s forwards infinite;
+}
+
+@keyframes slide-left{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-20%);
+  }
+}
+
+.animate-slide-right1{
+  animation: slide-right 2s ease-in none;
+}
+
+.animate-slide-right2{
+  animation: slide-right 3s ease-in none;
+}
+.animate-slide-right3{
+  animation: slide-right 4s ease-in none;
+}
+
+.animate-slide-left{
+  animation: slide-left 18s forwards infinite;
+}
+
+/* Utility classes */
+.animate-scroll-up {
+  animation: scroll-up 18s linear infinite;
+}
+
+.animate-rotate-x {
+  animation: rotate-x 5s linear infinite;
+  transform-origin: center;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
