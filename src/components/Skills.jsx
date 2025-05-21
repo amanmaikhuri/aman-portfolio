@@ -2,7 +2,25 @@ import { useEffect, useState } from "react"
 import { FaChevronRight } from "react-icons/fa"
 import SkillsData from "../sub/skills.json"
 import '../index.css'
-import skillsImage from "../assets/skills2.png"
+import cssImg from '../assets/css.png'
+import discord from '../assets/discord.svg'
+import express from '../assets/express.png'
+import firebase from '../assets/Firebase.png'
+import framer from '../assets/framer.png'
+import github from '../assets/gitwhite.png'
+import graphql from '../assets/graphql.png'
+import html from '../assets/html.png'
+import js from '../assets/js.png'
+import mongodb from '../assets/mongodb.png'
+import next from '../assets/next.png'
+import node from '../assets/node-js.png'
+import react from '../assets/react.png'
+import reactNative from '../assets/ReactNative .png'
+import redux from '../assets/redux.png'
+import stripe from '../assets/stripe.webp'
+import tailwind from '../assets/tailwind.png'
+import ts from '../assets/ts.png'
+import vercel from '../assets/vercel.svg'
 
 const Skills = () => {
 
@@ -12,129 +30,173 @@ const Skills = () => {
     setData(SkillsData);
   },[])
 
+  console.log(data[1].skill12)
+
   
   
 
   return (
-    <div className="h-[100vh] w-[102%] max-w-[1140px] px-4 pb-8 flex flex-col justify-center gap-1 md:gap-5 md:flex-row bg-gradient-to-b from-purple-500 to-blue-400 rounded-2xl sticky top-5 z-5 text-white">
-            {/* left part */}
-            <div className='h-full w-[100%] px-4 py-2 flex flex-col justify-center gap-1 md:gap-2 rounded-lg'>
-                <h2 className="font-extrabold md:text-[1.5rem]">Skills</h2>
+    <div className="h-[100vh] w-[102%] max-w-[1140px] px-4 bg-gradient-to-b from-purple-500 to-blue-400 rounded-2xl sticky top-5 z-5 text-white overflow-y-hidden">
+      
+      <h2 className="text-blue-950 font-extrabold text-2xl px-4 py-2">
+        Skills
+      </h2>
 
-                {data.length > 0 && (
-                  // card1
-            <>
-              <h3 className="font-bold md:text-[1rem] text-cyan-200">{data[0].card1}</h3>
-              <ul className="flex flex-col gap-1.5 text-[0.75rem]  md:text-[1rem] ">
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[0].skill1}
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[0].skill2}
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[0].skill3}
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[0].skill4}
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[0].skill5}
-                </li>
-              </ul>
-            </>
-)}
-            <div className="h-auto w-full bg-amber-950 border rounded-lg">
+       {/* skill container */}
+       <div className="flex flex-col md:flex-row gap-6 h-full relative overflow-x-hidden">
+        {/* left part */}
+        <div className="w-full h-full py-4 px-4">
+          {data && 
+          <div className="flex flex-col gap-4 px-4">
+          {/* skill 1 */}
+          <div className="flex flex-col gap-2">
+              <h3 className="text-blue-950 font-bold text-[1.2rem]">{data[0].card1}</h3>
+            <ul>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[0].skill1}
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[0].skill2}
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[0].skill3}
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[0].skill4}
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[0].skill5}
+              </li>
+            </ul>
+          </div>
 
-            </div>
+          {/* skill2 */}
+          <div className="flex flex-col gap-2">
+              <h3  className="text-blue-950 font-bold text-[1.2rem]">{data[1].card2}</h3>
+            <ul>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[1].skill12}
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[1].skill22}
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[1].skill32}
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[1].skill42}
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[1].skill52}
+              </li>
+            </ul>
+          </div>
 
-            <div className=" hidden h-full w-full px-2 py-2 bg-cyan-100 border rounded-lg md:grid overflow-hidden relative">
-              <div className="h-18 md:h-15 w-full absolute top-0 bg-gradient-to-b from-orange-700 z-10"></div>
+          {/* skill3 */}
+          <div className="flex flex-col gap-2">
+              <h3  className="text-blue-950 font-bold text-[1.2rem]">{data[2].card3}</h3>
+            <ul>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[2].skill13}
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[2].skill23}
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[2].skill33}
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaChevronRight />
+                {data[2].skill44}
+              </li>
+            </ul>
+          </div>
+          </div>
+          }
+        </div>
 
-              <img src={skillsImage} alt="skills section" loading="lazy"
-              className="h-full w-[100%] animate-scroll-up"/>
 
-              <div className="h-18 md:h-15 w-full absolute bottom-0 bg-gradient-to-b to-green-700 z-10"></div>
+        {/* right part */}
+        <div className="relative h-[350px] w-full md:h-[85%] md:w-[45rem] overflow-y-hidden rounded-lg">
+            <div className="w-full h-[150%] px-4 py-4 lg:px-9 bg-gradient-to-b from-pink-500 to-cyan-500 flex flex-wrap gap-6 justify-center absolute right-0  animate-scroll-up">
+              <img src={html} alt="HTML" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={cssImg} alt="CSS" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={js} alt="JavaScript" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={github} alt="GitHub" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={react} alt="React" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={tailwind} alt="tailwind" loading="lazy"
+              className="h-25 w-25"/>
               
+              <img src={reactNative} alt="react-native" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={express} alt="express js" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={redux} alt="redux" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={ts} alt="typeScript" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={firebase} alt="firebase" loading="lazy"
+              className="h-20 w-18"/>
+
+              <img src={next} alt="next-js" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={vercel} alt="vercel" loading="lazy"
+              className="h-20 w-50"/>
+
+              <img src={node} alt="node-js" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={mongodb} alt="mongodb atlas" loading="lazy"
+              className="h-35 w-20"/>
+
+              <img src={graphql} alt="graphql" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={discord} alt="discord" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={stripe} alt="stripe" loading="lazy"
+              className="h-20 w-20"/>
+
+              <img src={framer} alt="framer" loading="lazy"
+          className="h-20 w-20"/>
             </div>
-            </div>
-            
-            {/* right part */}
 
-          <div className='h-full w-[100%] px-4 py-2 flex flex-col justify-center lg:justify-start lg:py-14 gap-1 md:gap-2 rounded-lg'>
+            {/* gradient boxes */}
+            <div className="h-12 w-full absolute top-0 bg-gradient-to-b from-blue-100"></div>
 
-          {/* card2 */}
-          {data.length > 0 && (
-            <>
-              <h3 className="font-bold md:text-[1rem] text-cyan-200">{data[1].card2}</h3>
-              <ul className="flex flex-col gap-1.5 text-[0.75rem]  md:text-[1rem] ">
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[1].skill12}
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[1].skill22}
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[1].skill32}
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[1].skill42}
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[1].skill52}
-                </li>
-              </ul>
-            </>
-
-            // card2
-            
-
-
-          )}
-          <div className="h-auto w-full bg-amber-950 border rounded-lg"></div>
-
-            {/* third card */}
-          {data.length > 0 && (
-            <>
-              <h3 className="font-bold md:text-[1rem] text-cyan-200">{data[2].card3}</h3>
-              <ul className="flex flex-col gap-1.5 text-[0.75rem]  md:text-[1rem] ">
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[2].skill13}
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[2].skill23}
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[2].skill33}
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaChevronRight color="cyan" />
-                  {data[2].skill44}
-                </li>
-              </ul>
-            </>
-
-            // card2
-            
-
-
-          )}
-          <div className="h-auto w-full bg-amber-950 border rounded-lg"></div>
-            </div>
-            </div>
+            <div className="h-12 w-full absolute bottom-0 bg-gradient-to-t from-blue-100"></div>
+        </div> 
+       </div>
+    </div>
   )
 }
 export default Skills

@@ -27,11 +27,11 @@ function App() {
       {/* about section */}
         <AboutSection />
 
-      {/* certifications */}
-      {/* <Certifications /> */}
-
       {/* blog section */}
       {/* <BlogsSection /> */}
+
+      {/* certifications */}
+      {/* <Certifications /> */}
 
       {/* contact section */}
       {/* <ContactMe /> */}

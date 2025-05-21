@@ -3,112 +3,179 @@ import moodlogger from "../assets/moodLogger.png"
 
 const ProjectSection = () => {
   return (
-    <div className="h-[100vh] w-[100vw] max-w-[1200px] px-4 bg-gradient-to-b from-green-500 to-purple-500 rounded-2xl sticky top-9 z-10 overflow-x-hidden">
+    <div className="h-[100vh] w-[100vw] px-4 bg-gradient-to-b from-green-500 to-purple-500 rounded-2xl sticky top-9 z-10 overflow-x-hidden ">
 
-      {/* project title */}
-        <div className="px-2 py-2 lg:pt-9 lg:text-2xl font-extrabold text-[1.2rem] text-blue-950">
-          <h2>Projects</h2>
-        </div>
+      {/* animated container  */}
+      <div className="flex flex-col gap-2 px-2 py-2 absolute">
+        <h2 className="font-extrabold px-4 py-2 text-cyan-200 text-2xl border-b-2">
+          Projects & Experience
+        </h2>
 
-
-      {/* cards container */}
-      <div className="h-[89%] min-w-[400vw] md:min-w-[140vw] md:px-2 max-w-[1200px] bg-gradient-to-b from-green-500 to-purple-500  flex  flex-wrap gap-5 overflow-hidden animate-slide-left">
-
-        {/* box1       */}
-        <div className="flex flex-col gap-2 bg-gradient-to-b from-blue-400 to-blue-950 w-[300px] h-[480px] md:w-[320px] lg:h-[460px] md:h-[520px] px-2 py-2 rounded-lg md:mt-2">
-          <h3 className="font-bold text-2xl text-blue-950">
-            Growth Snap
-          </h3>
-          <img src={growthSnap} alt="Growth Snap" loading="lazy"
-              className="h-[50%] w-[350px] rounded-lg"
-          />
-
-          <div className="h-full px-2 py-2 w-[280px] lg:w-[100%] flex flex-col gap-2 border rounded-lg">
-            <p className="h-full"><strong>Project Description:</strong></p>
-
-            <div className="flex gap-2 ">
-                <a href="" className="border px-2 py-0.5 rounded-md font-bold text-blue-950 bg-blue-200">
-                  Live link
-                </a>
-                <a href="" className="border px-2 py-0.5 rounded-md font-bold text-blue-600 bg-blue-100">
-                  Github Repo Link
-                </a>
+        {/* project cards container */}
+        <div className="px-4 py-6 animate-slide-left md:w-[300%] lg:w-[100%] flex gap-6 relative">
+            {/* card1 */}
+            <div className="w-[320px] h-[520px] px-2 py-2 border rounded-lg bg-gradient-to-b from-blue-900 to-blue-500 text-white">
+              <h3 className="font-bold text-blue-400 text-2xl pb-4 pt-1">Growth Snap</h3>
+              <div className="rounded-md">
+                <img src={growthSnap} alt="Growth Snap" loading="lazy"
+                className="rounded-lg"/>
+              </div>
+              <div>
+                <p className="py-1">
+                  <strong className="text-blue-300">Tech Stack: </strong>
+                  React.js, Vite, vercel, GitHub, Tailwind
+                </p>
+                <p className="py-1">
+                  <strong className="text-blue-300">
+                    Project Description:
+                  </strong>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi repellat similique sed natus necessitatibus.
+                </p>
+                <div className="py-2 flex gap-4">
+                  <a href="#"
+                  className="px-2 py-0.5 border rounded-md bg-blue-950 font-bold">
+                    GitHub Repo Link
+                  </a>
+                  <a href="#"
+                  className="px-2 py-0.5 border rounded-md bg-green-600 font-bold">
+                    Live Link
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
 
-        </div>
-
-        {/* box-2 */}
-        <div className="flex flex-col gap-2 bg-gradient-to-b from-blue-400 to-blue-950 w-[300px] h-[480px] md:w-[320px] md:h-[500px] lg:h-[460px] px-2 py-2 rounded-lg mt-4  md:mt-6">
-          <h3 className="font-bold text-2xl text-blue-950">
-            Mood Logger
-          </h3>
-          <img src={moodlogger} alt="Growth Snap" loading="lazy"
-              className="h-[50%] md:h-[450px] w-[350px] rounded-lg"
-          />
-
-          <div className="h-full px-2 py-2 w-[280px] lg:w-[100%] flex flex-col gap-2 border rounded-lg">
-            <p className="h-full"><strong>Project Description:</strong></p>
-
-            <div className="flex gap-2 ">
-                <a href="" className="border px-2 py-0.5 rounded-md font-bold text-blue-950 bg-blue-200">
-                  Live link
-                </a>
-                <a href="" className="border px-2 py-0.5 rounded-md font-bold text-blue-600 bg-blue-100">
-                  Github Repo Link
-                </a>
+            {/* card2 */}
+            <div className="w-[320px] h-[520px] px-2 py-2 border rounded-lg bg-gradient-to-b from-blue-900 to-blue-500 text-white mt-9">
+              <h3 className="font-bold text-blue-400 text-2xl pb-4 pt-1">Mood Logger</h3>
+              <div className="rounded-md">
+                <img src={moodlogger} alt="Growth Snap" loading="lazy"
+                className="rounded-lg"/>
+              </div>
+              <div>
+                <p className="py-1">
+                  <strong className="text-blue-300">Tech Stack: </strong>
+                  React.js, Vite, vercel, GitHub, Tailwind
+                </p>
+                <p className="py-1">
+                  <strong className="text-blue-300">
+                    Project Description:
+                  </strong>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi repellat similique sed natus necessitatibus.
+                </p>
+                <div className="py-2 flex gap-4">
+                  <a href="#"
+                  className="px-2 py-0.5 border rounded-md bg-blue-950 font-bold">
+                    GitHub Repo Link
+                  </a>
+                  <a href="#"
+                  className="px-2 py-0.5 border rounded-md bg-green-600 font-bold">
+                    Live Link
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
 
-        </div>
-
-        {/* box-3 */}
-        <div className="flex flex-col gap-2 bg-gradient-to-b from-blue-400 to-blue-950 w-[300px] h-[480px] md:w-[320px] md:h-[520px] lg:h-[460px] px-2 py-2 rounded-lg md:mt-2">
-          <h3 className="font-bold text-2xl text-blue-950">
-            Expense Tracker
-          </h3>
-          <img src={growthSnap} alt="Growth Snap" loading="lazy"
-              className="h-[50%] w-[350px] rounded-lg"
-          />
-
-          <div className="h-full px-2 py-2 w-[280px] lg:w-[100%] flex flex-col gap-2 border rounded-lg">
-            <p className="h-full"><strong>Project Description:</strong></p>
-
-            <div className="flex gap-2 ">
-                <a href="" className="border px-2 py-0.5 rounded-md font-bold text-blue-950 bg-blue-200">
-                  Live link
-                </a>
-                <a href="" className="border px-2 py-0.5 rounded-md font-bold text-blue-600 bg-blue-100">
-                  Github Repo Link
-                </a>
+            {/* card3 */}
+            <div className="w-[320px] h-[520px] px-2 py-2 border rounded-lg bg-gradient-to-b from-blue-900 to-blue-500 text-white">
+              <h3 className="font-bold text-blue-400 text-2xl pb-4 pt-1">Recipe Web</h3>
+              <div className="rounded-md">
+                <img src={growthSnap} alt="Growth Snap" loading="lazy"
+                className="rounded-lg"/>
+              </div>
+              <div>
+                <p className="py-1">
+                  <strong className="text-blue-300">Tech Stack: </strong>
+                  React.js, Vite, vercel, GitHub, Tailwind
+                </p>
+                <p className="py-1">
+                  <strong className="text-blue-300">
+                    Project Description:
+                  </strong>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi repellat similique sed natus necessitatibus.
+                </p>
+                <div className="py-2 flex gap-4">
+                  <a href="#"
+                  className="px-2 py-0.5 border rounded-md bg-blue-950 font-bold">
+                    GitHub Repo Link
+                  </a>
+                  <a href="#"
+                  className="px-2 py-0.5 border rounded-md bg-green-600 font-bold">
+                    Live Link
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
 
-        </div>
-
-        {/* box-2 */}
-        <div className="flex flex-col gap-2 bg-gradient-to-b from-blue-400 to-blue-950 w-[300px] h-[480px] md:w-[320px] md:h-[500px] lg:h-[460px] px-2 py-2 rounded-lg mt-4  md:mt-6">
-          <h3 className="font-bold text-2xl text-blue-950">
-            Recipe Website
-          </h3>
-          <img src={moodlogger} alt="Growth Snap" loading="lazy"
-              className="h-[50%] md:h-[450px] w-[350px] rounded-lg"
-          />
-
-          <div className="h-full px-2 py-2 w-[280px] lg:w-[100%] flex flex-col gap-2 border rounded-lg">
-            <p className="h-full"><strong>Project Description:</strong></p>
-
-            <div className="flex gap-2 ">
-                <a href="" className="border px-2 py-0.5 rounded-md font-bold text-blue-950 bg-blue-200">
-                  Live link
-                </a>
-                <a href="" className="border px-2 py-0.5 rounded-md font-bold text-blue-600 bg-blue-100">
-                  Github Repo Link
-                </a>
+            {/* card4 */}
+            <div className="w-[320px] h-[520px] px-2 py-2 border rounded-lg bg-gradient-to-b from-blue-900 to-blue-500 text-white mt-9">
+              <h3 className="font-bold text-blue-400 text-2xl pb-4 pt-1">Amazon Clone</h3>
+              <div className="rounded-md">
+                <img src={growthSnap} alt="Growth Snap" loading="lazy"
+                className="rounded-lg"/>
+              </div>
+              <div>
+                <p className="py-1">
+                  <strong className="text-blue-300">Tech Stack: </strong>
+                  React.js, Vite, vercel, GitHub, Tailwind
+                </p>
+                <p className="py-1">
+                  <strong className="text-blue-300">
+                    Project Description:
+                  </strong>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi repellat similique sed natus necessitatibus.
+                </p>
+                <div className="py-2 flex gap-4">
+                  <a href="#"
+                  className="px-2 py-0.5 border rounded-md bg-blue-950 font-bold">
+                    GitHub Repo Link
+                  </a>
+                  <a href="#"
+                  className="px-2 py-0.5 border rounded-md bg-green-600 font-bold">
+                    Live Link
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
 
+            {/* card5 */}
+            <div className="w-[320px] h-[520px] px-2 py-2 border rounded-lg bg-gradient-to-b from-blue-900 to-blue-500 text-white">
+              <h3 className="font-bold text-blue-400 text-2xl pb-4 pt-1">Expense tracker</h3>
+              <div className="rounded-md">
+                <img src={growthSnap} alt="Growth Snap" loading="lazy"
+                className="rounded-lg"/>
+              </div>
+              <div>
+                <p className="py-1">
+                  <strong className="text-blue-300">Tech Stack: </strong>
+                  React.js, Vite, vercel, GitHub, Tailwind
+                </p>
+                <p className="py-1">
+                  <strong className="text-blue-300">
+                    Project Description:
+                  </strong>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi repellat similique sed natus necessitatibus.
+                </p>
+                <div className="py-2 flex gap-4">
+                  <a href="#"
+                  className="px-2 py-0.5 border rounded-md bg-blue-950 font-bold">
+                    GitHub Repo Link
+                  </a>
+                  <a href="#"
+                  className="px-2 py-0.5 border rounded-md bg-green-600 font-bold">
+                    Live Link
+                  </a>
+                </div>
+              </div>
+            </div>
         </div>
+
+{/* gradient box */}
+            <div className="h-[98%] w-18 bg-gradient-to-r from-white absolute -bottom-11 -left-2"></div>
+
+            <div className=" hidden md:block lg:hidden h-[98%] w-18 bg-gradient-to-l from-white absolute -bottom-11 left-170"></div>
+
+            <div className="h-[98%] w-18 bg-gradient-to-l from-white absolute -bottom-11 right-62"></div>
+      
       </div>
     </div>
   )
