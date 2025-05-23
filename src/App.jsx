@@ -28,16 +28,16 @@ function App() {
         <AboutSection />
 
       {/* blog section */}
-      {/* <BlogsSection /> */}
+      <BlogsSection />
 
       {/* certifications */}
-      {/* <Certifications /> */}
+      <Certifications />
 
       {/* contact section */}
-      {/* <ContactMe /> */}
+      <ContactMe />
 
       {/* footer section  */}
-      {/* <Footer /> */}
+      <Footer />
    </div>
   )
 }

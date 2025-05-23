@@ -30,13 +30,9 @@ const Skills = () => {
     setData(SkillsData);
   },[])
 
-  console.log(data[1].skill12)
-
-  
-  
-
   return (
-    <div className="h-[100vh] w-[102%] max-w-[1140px] px-4 bg-gradient-to-b from-purple-500 to-blue-400 rounded-2xl sticky top-5 z-5 text-white overflow-y-hidden">
+    <div className="h-[100vh] w-full bg-gradient-to-b from-purple-500 to-blue-400 flex justify-center items-center  sticky top-5 z-5">
+      <div className="h-[100vh] w-[102%] max-w-[1140px] px-4  rounded-2xl text-white overflow-y-hidden">
       
       <h2 className="text-blue-950 font-extrabold text-2xl px-4 py-2">
         Skills
@@ -46,7 +42,7 @@ const Skills = () => {
        <div className="flex flex-col md:flex-row gap-6 h-full relative overflow-x-hidden">
         {/* left part */}
         <div className="w-full h-full py-4 px-4">
-          {data && 
+          {data.length >=3 && 
           <div className="flex flex-col gap-4 px-4">
           {/* skill 1 */}
           <div className="flex flex-col gap-2">
@@ -197,6 +193,8 @@ const Skills = () => {
         </div> 
        </div>
     </div>
+    </div>
+    
   )
 }
 export default Skills

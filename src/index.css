@@ -84,6 +84,14 @@
   animation: slide-left 18s forwards infinite;
 }
 
+.animate-slide-left-certifications{
+  animation: slide-left 60s forwards infinite;
+}
+
+.animate-slide-left-certification{
+  animation: slide-left 50s forwards infinite;
+}
+
 /* Utility classes */
 .animate-scroll-up {
   animation: scroll-up 18s linear infinite;
