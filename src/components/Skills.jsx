@@ -39,7 +39,7 @@ const Skills = () => {
       </h2>
 
        {/* skill container */}
-       <div className="flex flex-col md:flex-row gap-6 h-full relative overflow-x-hidden">
+       <div className="flex flex-col md:flex-row gap-1 md:gap-6 h-full relative overflow-y-hidden">
         {/* left part */}
         <div className="w-full h-full py-4 px-4">
           {data.length >=3 && 
@@ -126,8 +126,8 @@ const Skills = () => {
 
 
         {/* right part */}
-        <div className="relative h-[350px] w-full md:h-[85%] md:w-[45rem] overflow-y-scroll scroll-m-0 rounded-lg">
-            <div className="w-full h-[150%] px-4 py-4 lg:px-9 bg-gradient-to-b from-pink-500 to-cyan-500 flex flex-wrap gap-6 justify-center absolute right-0  animate-scroll-up">
+        <div className="relative h-[350px] w-full md:h-[70%] md:w-[45rem] rounded-lg overflow-y-hidden md:my-9 md:mx-6">
+            <div className="w-full h-[150%] px-4 py-4 lg:px-9 bg-gradient-to-b from-pink-500 to-cyan-500 flex flex-wrap gap-6 justify-center absolute right-0 animate-scroll-up">
               <img src={html} alt="HTML" loading="lazy"
               className="h-20 w-20"/>
 
@@ -187,9 +187,9 @@ const Skills = () => {
             </div>
 
             {/* gradient boxes */}
-            <div className="h-12 w-full absolute top-0 bg-gradient-to-b from-blue-100"></div>
+            {/* <div className="h-12 w-full absolute top-0 bg-gradient-to-b from-blue-100"></div>
 
-            <div className="h-12 w-full absolute bottom-0 bg-gradient-to-t from-blue-100"></div>
+            <div className="h-12 w-full absolute bottom-0 bg-gradient-to-t from-blue-100"></div> */}
         </div> 
        </div>
     </div>

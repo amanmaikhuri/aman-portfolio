@@ -3,16 +3,16 @@ import moodlogger from "../assets/moodLogger.png"
 
 const ProjectSection = () => {
   return (
-    <div className="h-[100vh] w-[100vw] px-4 bg-gradient-to-b from-green-500 to-purple-500 rounded-2xl sticky top-9 z-10 overflow-x-hidden ">
+    <div className="h-[100vh] w-[100vw] px-4 bg-gradient-to-b from-green-500 to-purple-500 rounded-2xl sticky top-9 z-10 overflow-x-hidden overflow-y-hidden">
 
       {/* animated container  */}
       <div className="flex flex-col gap-2 px-2 py-2 absolute">
-        <h2 className="font-extrabold px-4 py-2 text-cyan-200 text-2xl border-b-2">
+        <h2 className="font-extrabold px-4 pt-2 pb-4 text-cyan-200 text-2xl border-b-2">
           Projects & Experience
         </h2>
 
         {/* project cards container */}
-        <div className="px-4 py-6 animate-slide-left md:w-[300%] lg:w-[100%] flex gap-6 relative">
+        <div className="px-4 py-4 animate-slide-left w-[410%] md:w-[300%] lg:w-[100%] flex gap-6 relative overflow-y-hidden">
             {/* card1 */}
             <div className="w-[320px] h-[520px] px-2 py-2 border rounded-lg bg-gradient-to-b from-blue-900 to-blue-500 text-white">
               <h3 className="font-bold text-blue-400 text-2xl pb-4 pt-1">Growth Snap</h3>

@@ -3,12 +3,12 @@ import myProfile from '../assets/amanmaikhuree..png'
 const AboutMe = () => {
   return (
     <div className='h-[100vh] w-full  bg-gradient-to-b from-blue-900 to-green-500 flex justify-center items-center  sticky top-2 z-3 '>
-        <div className="h-full w-full max-w-[1080px] px-4 pt-4 pb-8  flex flex-col justify-center gap-2 md:gap-5 md:flex-row rounded-2xl text-white">
+        <div className="h-full w-full max-w-[1080px] px-4 pt-4 pb-8  flex flex-col justify-center gap-1 md:gap-5 md:flex-row rounded-2xl text-white">
         {/* left part */}
         <div className="flex flex-col gap-3 items-start justify-center ">
             <img src={myProfile} alt="Aman Maikhuree profile picture" 
             loading='lazy'
-            className='rounded-4xl py-2 h-[150px] md:h-[400px]'
+            className='rounded-4xl py-2 h-[180px] md:h-[400px]'
             />
         </div>
         
