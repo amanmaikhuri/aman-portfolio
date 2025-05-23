@@ -31,7 +31,7 @@ const Skills = () => {
   },[])
 
   return (
-    <div className="h-[100vh] w-full bg-gradient-to-b from-purple-500 to-blue-400 flex justify-center items-center  sticky top-5 z-5">
+    <div className="h-[100vh] w-full bg-gradient-to-b from-purple-500 to-blue-400 flex justify-center items-center  sticky top-5 z-5 text-[0.65rem] md:text-sm lg:text-[1rem]">
       <div className="h-[100vh] w-[102%] max-w-[1140px] px-4  rounded-2xl text-white overflow-y-hidden">
       
       <h2 className="text-blue-950 font-extrabold text-2xl px-4 py-2">
@@ -126,7 +126,7 @@ const Skills = () => {
 
 
         {/* right part */}
-        <div className="relative h-[350px] w-full md:h-[85%] md:w-[45rem] overflow-y-hidden rounded-lg">
+        <div className="relative h-[350px] w-full md:h-[85%] md:w-[45rem] overflow-y-scroll scroll-m-0 rounded-lg">
             <div className="w-full h-[150%] px-4 py-4 lg:px-9 bg-gradient-to-b from-pink-500 to-cyan-500 flex flex-wrap gap-6 justify-center absolute right-0  animate-scroll-up">
               <img src={html} alt="HTML" loading="lazy"
               className="h-20 w-20"/>

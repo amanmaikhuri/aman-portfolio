@@ -170,7 +170,7 @@ const ProjectSection = () => {
         </div>
 
 {/* gradient box */}
-            <div className="h-[98%] w-18 bg-gradient-to-r from-white absolute -bottom-11 -left-2"></div>
+            <div className="h-[98%] w-18 bg-gradient-to-r from-white absolute -bottom-11 -left-4"></div>
 
             <div className=" hidden md:block lg:hidden h-[98%] w-18 bg-gradient-to-l from-white absolute -bottom-11 left-170"></div>
 

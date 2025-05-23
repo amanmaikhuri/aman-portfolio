@@ -13,8 +13,8 @@ const AboutMe = () => {
         </div>
         
         {/* right part */}
-        <div className="h-full w-full max-w-[350px] flex flex-col gap-2 md:gap-3 items-start justify-center ">
-          <h2 className='font-bold md:font-extrabold md:text-3xl'>About Me</h2>
+        <div className="h-full w-full max-w-[350px] flex flex-col gap-2 md:gap-3 items-start justify-center text-[0.65rem] md:text-sm lg:text-[1rem]">
+          <h2 className='font-bold md:font-extrabold'>About Me</h2>
 
           <p className=' max-w-[900px]'>I'am Aman - a self-taught developer, problem-solver, and dreemer with a deep curiosity for technology and a heart rooted in purpose.</p>
 
